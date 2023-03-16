@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
+
+@import '../src/styles/characters.css';
+@import '../src/styles/character.css';
+@import '../src/styles/search-form.css';
+
+:root {
+  --white: #FFFFFF;
+  --dirtywhite: #F2F2F7;
+  --gray: #8E8E93;
+  --grey: rgba(151, 151, 151, 0.2);
+  --transparrent-black: rgba(0, 0, 0, 0.5);
+  --shadow-color-first: rgba(0, 0, 0, 0.2);
+  --shadow-color-second: rgba(0, 0, 0, 0.12);
+  --shadow-color-third: rgba(0, 0, 0, 0.14);
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: normal;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1440px;
+	padding: 0 210px;
+}
+
+.header_logo {
+	width: auto;
+	padding: 86px 0 16px 0;
+	display: block;
+	margin-left: auto;
+	margin-right: auto
+}
+
+h3 {
+	font-weight: 400;
+	font-size: 48px;
+	line-height: 56px;
+}
+
+span {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.description-text {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0.25px;
+	color: #6E798C;
+}
+
+.facebook {
+    position: absolute;
+    padding: 1vw;
+    top: 50%;
+    left: 50%;
+    letter-spacing: 2px;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    border-style: solid;
+    color: #FFF;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #4C69BA;
+    border-color: #4C69BA;
+    border-radius: 5px;
+}
+
+.fa {
+	padding: 0 15px 0 0;
+}
+
+@media (max-width: 960px) {
+
+	.header_logo {
+		width: 100%;
+	}
+}
+
+@media (max-width: 768px) {
+
+	.container {
+		margin: 0 auto;
+		max-width: 360px;
+		padding: 0 24px;
+	}
+
+	.header_logo {
+		width: 100%;
+		padding: 92px 0 32px 0;
+	}
+
+	.h6 {
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	h3 {
+		font-weight: 400;
+		font-size: 32px;
+		line-height: 38px;
+	}
+  
+}

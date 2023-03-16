@@ -1,0 +1,95 @@
+
+.container_character {
+	margin: 0 auto;
+	max-width: 1440px;
+	padding: 0 50px;
+}
+
+.character_information {
+	margin: 5px 0 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.character_information-title {
+	text-align: center;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	letter-spacing: 0.15px;
+	color: var(--gray);
+}
+
+.character_description {
+	padding: 43px 43px;
+	display: flex;
+	flex-direction: column;
+	width: 31vw;
+}
+
+.character_information-article {
+	padding: 46px 0 0;
+}
+
+.character_description li {
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+	padding: 10px;
+	border-bottom: 1px solid var(--grey);
+}
+
+.character_button {
+	margin: 22px 0 0 0;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-family: 'Karla';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 21px;
+	color: #000000;
+	background-color: transparent;
+	border: none;
+}
+
+.character_button:before {
+	content: url(../images/go_back_arrow.png);
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin-right: 13px;
+}
+
+@media (max-width: 768px) {
+
+	.container_character {
+		margin: 0 auto;
+		max-width: 360px;
+		padding: 0 24px;
+	}
+
+	.character_information {
+		margin: 7vw 0 0;
+	}
+
+	.character_description {
+		padding: 14px 0 0;
+		width: 100%;
+	}
+
+	.character_description li {
+		padding: 2.7vw 4vw;
+	}
+
+	.character_information-article {
+		padding: 30px 0 0;
+		width: 100%;
+		margin: 0;
+	}
+
+	.character_information-title {
+		text-align: start;
+	}
+}
