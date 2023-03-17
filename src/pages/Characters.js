@@ -32,7 +32,6 @@ const Characters = () => {
 
   return (
     <div className='container'>
-      <Login/>
       <div>
         <img
           alt='Rick and Morty'
