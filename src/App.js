@@ -2,9 +2,9 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 
-import { Characters } from './Characters';
-import { Character } from './Character';
-import { Notfoundpage } from './Notfoundpage';
+import { Characters } from './pages/Characters';
+import { Character } from './pages/Character';
+import { Notfoundpage } from './pages/Notfoundpage';
 import { Layout } from '../components/Layout';
 function App() {
   return (
