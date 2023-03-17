@@ -1,7 +1,7 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
-import {RICK_AND_MORTY_API_URL} from '../common/constants';
+import { RICK_AND_MORTY_API_URL } from '../common/constants';
 
 const Character = () => {
 
