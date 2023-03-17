@@ -64,6 +64,8 @@ span {
 .facebook {
     position: absolute;
     padding: 1vw;
+	height: 1000px;
+	width: 500px;
     top: 50%;
     left: 50%;
     letter-spacing: 2px;
