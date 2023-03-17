@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-import {RICK_AND_MORTY_API_URL} from '../common/constants';
+import { RICK_AND_MORTY_API_URL } from '../common/constants';
 import inputIcon from '../images/search_icon-input.png';
 import logo from '../images/logo.png';
 
@@ -32,7 +32,10 @@ const Characters = () => {
   return (
     <div className='container'>
       <div>
-        <img alt='Rick and Morty' title='Rick and Morty' className='header_logo' src={logo} />
+        <img
+          alt='Rick and Morty'
+          title='Rick and Morty'
+          className='header_logo' src={logo} />
       </div>
       <div className='search_wrapper'>
         <form className='search_form'>
@@ -57,8 +60,8 @@ const Characters = () => {
               <div className='characters_image-wrap'>
                 <img
                   className='characters_image'
-                  alt='Character'
-                  
+                  alt={character.name}
+                  title={character.name}
                   src={character.image}
                 />
               </div>
