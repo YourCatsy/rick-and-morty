@@ -37,11 +37,11 @@ const Character = () => {
               src={character.image}
             />
           </div>
-          <section class='character_information'>
+          <section className='character_information'>
             <h3>{character.name}</h3>
             <article className='character_information-article'>
               <h4 className='character_information-title'>Informations</h4>
-              <ul class='character_description'>
+              <ul className='character_description'>
                 <li>
                   <span>Gender</span>
                   <p className='description-text'>

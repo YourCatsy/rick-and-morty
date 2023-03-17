@@ -1,28 +1,27 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import FacebookLogin from 'react-facebook-login';
 
-import { TITLE_ICON, APP_ID, LOGIN_STORAGE_KEY } from '../common/constants';
+import { TITLE_ICON, APP_ID, LOGIN_STORAGE_KEY, USER_DATA_STORAGE_KEY, USER_AUTHORIZED } from '../common/constants';
 
 function Login() {
 
-  const [login, setLogin] = useState(localStorage.getItem(LOGIN_STORAGE_KEY) === 'authorized');
+  const [login, setLogin] = useState(localStorage.getItem(LOGIN_STORAGE_KEY) === USER_AUTHORIZED);
   const [data, setData] = useState({});
 
   const responseFacebook = response => {
-    localStorage.setItem('userdata', JSON.stringify(data));
+    localStorage.setItem(USER_DATA_STORAGE_KEY, JSON.stringify(response));
     setData(response);
     if (response.accessToken) {
       setLogin(true);
-      localStorage.setItem(LOGIN_STORAGE_KEY, 'authorized');
+      localStorage.setItem(LOGIN_STORAGE_KEY, USER_AUTHORIZED);
     } else {
       setLogin(false);
       localStorage.removeItem(LOGIN_STORAGE_KEY);
     }
-
   }
 
   if (!data.name) {
-    const userData = localStorage.getItem('userdata');
+    const userData = localStorage.getItem(USER_DATA_STORAGE_KEY);
     if (userData) {
       data.name = JSON.parse(userData).name;
     }

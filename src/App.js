@@ -10,7 +10,7 @@ import { Layout } from './components/Layout';
 function App() {
   return (
     <>
-<Login/>
+      <Login />
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route index element={<Characters />} />

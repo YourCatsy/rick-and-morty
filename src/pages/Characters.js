@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import { RICK_AND_MORTY_API_URL } from '../common/constants';
 import inputIcon from '../images/search_icon-input.png';
 import logo from '../images/logo.png';
-import Login from './Login';
 
 const Characters = () => {
   const [characters, setCharacters] = useState([]);
