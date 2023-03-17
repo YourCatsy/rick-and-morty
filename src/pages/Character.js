@@ -1,6 +1,8 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
+import {RICK_AND_MORTY_API_URL} from '../common/constants';
+
 const Character = () => {
 
   const { id } = useParams();
@@ -10,7 +12,7 @@ const Character = () => {
 
   useEffect(() => {
     const fetchPost = async () => {
-      const response = await fetch(`https://rickandmortyapi.com/api/character/${id}`);
+      const response = await fetch(`${RICK_AND_MORTY_API_URL}/${id}`);
       const data = await response.json();
       const res = data;
 
@@ -30,7 +32,8 @@ const Character = () => {
           <div className='characters_image-wrap characters_image-wrap-circle'>
             <img
               alt='Character'
-              className='characters_image characters_image-circle '
+              className='characters_image characters_image-circle'
+              title={characters.name}
               src={characters.image}
             />
           </div>
